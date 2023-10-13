@@ -1,0 +1,193 @@
+body {
+	background-color: #F2F2F2;
+}
+
+.container {
+	margin-top: 50px;
+}
+
+h2 {
+	margin-bottom: 20px;
+}
+
+.btn-primary {
+	background-color: #0077B5;
+	border: none;
+}
+
+.btn-primary:hover {
+	background-color: #005E8B;
+}
+
+.quote-container {
+	margin: 50px 0;
+	text-align: center;
+  }
+  .quote-text {
+	font-size: 28px;
+	font-style: italic;
+  }
+  .quote-author {
+	margin-top: 20px;
+	font-weight: bold;
+  }
+  .priority-task-container {
+	margin: 50px 0;
+	text-align: center;
+  }
+  .task-input {
+	font-size: 24px;
+	border: none;
+	border-bottom: 1px solid #ced4da;
+	outline: none;
+	text-align: center;
+	margin-bottom: 20px;
+  }
+  .task-input:focus {
+	border-bottom: 2px solid #007bff;
+  }
+  .motivation-container {
+	margin: 50px 0;
+	text-align: center;
+  }
+  .motivation-heading {
+	font-size: 36px;
+	margin-bottom: 50px;
+	font-weight: bold;
+  }
+  .session-container {
+	margin: 50px 0;
+	text-align: center;
+  }
+  .session-heading {
+	font-size: 36px;
+	margin-bottom: 50px;
+	font-weight: bold;
+  }
+  .session-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+  }
+  .session-list li {
+	margin-bottom: 10px;
+	font-size: 24px;
+  }
+  .survey-container {
+	margin: 50px 0;
+	text-align: center;
+  }
+  .survey-heading {
+	font-size: 36px;
+	margin-bottom: 50px;
+	font-weight: bold;
+  }
+  .survey-question {
+	font-size: 24px;
+	margin-bottom: 20px;
+  }
+  .survey-answer {
+	margin-bottom: 20px;
+	font-size: 20px;
+  }
+  .survey-button {
+	font-size: 24px;
+	margin-top: 20px;
+  }
+
+  /* Priority task section */
+.priority-task-container {
+	padding: 80px 0;
+	background-color: #f9f9f9;
+  }
+  
+  .priority-task-container h2 {
+	font-size: 32px;
+	font-weight: 700;
+	color: #333333;
+  }
+  
+  .priority-task-container form {
+	margin-bottom: 30px;
+  }
+  
+  .priority-task-container form label {
+	font-size: 18px;
+	font-weight: 600;
+	color: #333333;
+  }
+  
+  .priority-task-container form input {
+	padding: 16px;
+	font-size: 16px;
+	font-weight: 500;
+	color: #333333;
+	border-radius: 4px;
+	border: 1px solid #cccccc;
+  }
+  
+  .priority-task-container form button {
+	padding: 16px 32px;
+	font-size: 18px;
+	font-weight: 600;
+	border-radius: 4px;
+  }
+  
+  .priority-task-container .mt-5 {
+	border-top: 1px solid #cccccc;
+	padding-top: 30px;
+  }
+  
+  .priority-task-container .mt-5 h4 {
+	font-size: 24px;
+	font-weight: 600;
+	color: #333333;
+  }
+  
+  .priority-task-container .mt-5 p {
+	font-size: 18px;
+	font-weight: 500;
+	color: #333333;
+  }
+
+  .mindfulness-exercises ul {
+	list-style: none;
+	padding-left: 0;
+  }
+  
+  .mindfulness-exercises li {
+	margin-bottom: 20px;
+  }
+  
+  .mindfulness-exercises h4 {
+	margin-bottom: 10px;
+  }
+  
+  .mindfulness-exercises p {
+	font-size: 18px;
+	line-height: 1.5;
+  }
+
+  .gratitude-journal-container {
+	background-color: #f2f2f2;
+	padding: 50px 0;
+  }
+  
+  .gratitude-journal-container h2 {
+	margin-bottom: 30px;
+  }
+  
+  .gratitude-journal-container form {
+	margin-bottom: 30px;
+  }
+  
+  .gratitude-journal-container .gratitude-entries h3 {
+	margin-top: 30px;
+	margin-bottom: 10px;
+  }
+  
+  .gratitude-journal-container .gratitude-entries li {
+	margin-bottom: 10px;
+  }
+  

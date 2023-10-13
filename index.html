@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mental health tracker App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Mental Health Tracker App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Analysis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Profile</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Inspirational Quote Section -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3 text-center">
+        <h2>Inspirational Quote</h2>
+        <p class="lead">"Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle."</p>
+        <p>- <b>Sanket Nimbargi</b></p>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Priority task section -->
+<section class="priority-task-container">
+	<div class="container">
+	  <div class="row justify-content-center">
+		<div class="col-md-8">
+		  <h2 class="text-center mb-5">Priority Task of the Day</h2>
+		  <form id="priority-form">
+			<div class="form-group">
+			  <label for="task-input">Enter your priority task for today:</label>
+			  <input type="text" class="form-control" id="task-input" placeholder="e.g. Finish project report">
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		  </form>
+		  <div class="mt-5">
+			<h4 class="mb-4">Your priority task for today:</h4>
+			<p id="task-output" class="lead"></p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+  
+
+  <!-- To-Do List Section -->
+  <div class="container">
+	<div class="row">
+	  <div class="col-md-12">
+		<h2>To-Do List</h2>
+		<form id="todo-form">
+		  <div class="form-group">
+			<label for="todo-input">Add new task:</label>
+			<input type="text" class="form-control" id="todo-input" placeholder="Enter task">
+		  </div>
+		  <button type="submit" class="btn btn-primary">Add</button>
+		</form>
+		<ul id="todo-list" class="list-group mt-3">
+		  <li class="list-group-item d-flex justify-content-between align-items-center">
+			Example Task 1
+			<span class="badge badge-danger badge-pill">Delete</span>
+		  </li>
+		  <li class="list-group-item d-flex justify-content-between align-items-center">
+			Example Task 2
+			<span class="badge badge-danger badge-pill">Delete</span>
+		  </li>
+		  <li class="list-group-item d-flex justify-content-between align-items-center">
+			Example Task 3
+			<span class="badge badge-danger badge-pill">Delete</span>
+		  </li>
+		</ul>
+	  </div>
+	</div>
+  </div>
+
+  <section id="home" class="home-section">
+	<div class="container">
+	  <div class="row">
+		<div class="col-lg-12">
+		  <h1>Welcome to Mental Health Tracker</h1>
+		  <h3>Track and improve your Mental Health with our tools.</h3>
+		  <a href="#features" class="btn btn-primary btn-lg mt-3">Get started</a>
+		</div>
+	  </div>
+	</div>
+  </section>
+  
+
+  <!-- Community Forum section -->
+<section class="community-forum-container">
+	<div class="container">
+	  <div class="row justify-content-center">
+		<div class="col-md-8">
+		  <h2>Community Forum</h2>
+		  <p>Connect with others who may be experiencing similar mental health challenges. Join the conversation and share your thoughts and feelings in a safe and supportive space.</p>
+		  <form>
+			<div class="form-group">
+			  <label for="forum-topic">Topic:</label>
+			  <input type="text" class="form-control" id="forum-topic" placeholder="Enter topic">
+			</div>
+			<div class="form-group">
+			  <label for="forum-message">Message:</label>
+			  <textarea class="form-control" id="forum-message" rows="3"></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		  </form>
+		  <hr>
+		  <h3>Recent Posts</h3>
+		  <div class="card">
+			<div class="card-body">
+			  <h5 class="card-title">Topic Title</h5>
+			  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ultricies velit, sit amet elementum nulla aliquam vel. </p>
+			  <a href="#" class="btn btn-primary">Read More</a>
+			</div>
+		  </div>
+		  <div class="card">
+			<div class="card-body">
+			  <h5 class="card-title">Topic Title</h5>
+			  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ultricies velit, sit amet elementum nulla aliquam vel. </p>
+			  <a href="#" class="btn btn-primary">Read More</a>
+			</div>
+		  </div>
+		  <div class="card">
+			<div class="card-body">
+			  <h5 class="card-title">Topic Title</h5>
+			  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ultricies velit, sit amet elementum nulla aliquam vel. </p>
+			  <a href="#" class="btn btn-primary">Read More</a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+
+<!-- Journaling section -->
+
+<section class="journaling-container">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h2>Journaling</h2>
+        <form id="journal-form">
+          <div class="form-group">
+            <label for="journal-input">Write about your day:</label>
+            <textarea class="form-control" id="journal-input" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!--Mental health support system-->
+  <section class="education-container">
+	<div class="container">
+	  <div class="row justify-content-center">
+		<div class="col-md-8">
+		  <h2>Mental Health Education</h2>
+		  <p>Learn about mental health, common mental illnesses, and how to improve your mental well-being.</p>
+		  <div class="accordion" id="education-accordion">
+			<div class="card">
+			  <div class="card-header" id="heading-one">
+				<h5 class="mb-0">
+				  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
+					What is anxiety?
+				  </button>
+				</h5>
+			  </div>
+  
+			  <div id="collapse-one" class="collapse show" aria-labelledby="heading-one" data-parent="#education-accordion">
+				<div class="card-body">
+				  Anxiety is a feeling of unease, such as worry or fear, that can be mild or severe. Everyone experiences anxiety at some point in their life, but if it starts to interfere with your daily life, it may be a sign of an anxiety disorder. There are several types of anxiety disorders, including generalized anxiety disorder, panic disorder, and social anxiety disorder.
+				</div>
+			  </div>
+			</div>
+  
+			<div class="card">
+			  <div class="card-header" id="heading-two">
+				<h5 class="mb-0">
+				  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-two" aria-expanded="false" aria-controls="collapse-two">
+					What is depression?
+				  </button>
+				</h5>
+			  </div>
+			  <div id="collapse-two" class="collapse" aria-labelledby="heading-two" data-parent="#education-accordion">
+				<div class="card-body">
+				  Depression is a mood disorder that causes persistent feelings of sadness, hopelessness, and loss of interest in activities. It can affect how you think, feel, and behave, and can interfere with your daily life. There are several types of depression, including major depressive disorder, persistent depressive disorder, and seasonal affective disorder.
+				</div>
+			  </div>
+			</div>
+  
+			<div class="card">
+			  <div class="card-header" id="heading-three">
+				<h5 class="mb-0">
+				  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-three" aria-expanded="false" aria-controls="collapse-three">
+					How can I improve my mental well-being?
+				  </button>
+				</h5>
+			  </div>
+			  <div id="collapse-three" class="collapse" aria-labelledby="heading-three" data-parent="#education-accordion">
+				<div class="card-body">
+				  There are several things you can do to improve your mental well-being, including:
+				  <ul>
+					<li>Practice self-care, such as eating healthy, getting enough sleep, and exercising regularly.</li>
+					<li>Engage in activities that you enjoy and that give you a sense of purpose.</li>
+					<li>Connect with others and build strong relationships.</li>
+					<li>Seek professional help if you are experiencing mental health problems.</li>
+				  </ul>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+  
+  <!--Personal recommendation section-->
+
+  <section class="recommendations-container">
+	<h2>Personalized Recommendations</h2>
+	<div class="recommendation-item">
+	  <h3 class="recommendation-title"></h3>
+	  <p class="recommendation-description"></p>
+	  <a href="#" class="recommendation-link"></a>
+	</div>
+  </section>
+  
+  
+  <!-- Mindfulness exercises section -->
+<section class="mindfulness-exercises">
+	<div class="container">
+	  <div class="row justify-content-center">
+		<div class="col-md-8">
+		  <h2>Mindfulness Exercises</h2>
+		  <p>Take a few minutes to practice these mindfulness exercises:</p>
+		  <ul>
+			<li>
+			  <h4>Breathing exercise</h4>
+			  <p>Find a comfortable seated position, close your eyes and take a deep breath in through your nose, holding it for a few seconds before exhaling through your mouth. Repeat this for several minutes, focusing only on your breath.</p>
+			</li>
+			<li>
+			  <h4>Body scan meditation</h4>
+			  <p>Lie down on your back and close your eyes. Slowly scan your body from your toes to your head, focusing on each body part and how it feels. Spend a few minutes on each body part before moving on to the next.</p>
+			</li>
+			<li>
+			  <h4>Gratitude meditation</h4>
+			  <p>Sit in a comfortable position, close your eyes and think of three things that you are grateful for. Spend a few minutes on each one, focusing on why you are grateful and how it makes you feel.</p>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	</div>
+  </section>
+
+  <!-- Gratitude Journal Section-->
+
+  <section class="gratitude-journal-container">
+	<div class="container">
+	  <div class="row justify-content-center">
+		<div class="col-md-8">
+		  <h2>Gratitude Journal</h2>
+		  <form id="gratitude-form">
+			<div class="form-group">
+			  <label for="gratitude-input">What are you thankful for today?</label>
+			  <textarea class="form-control" id="gratitude-input" rows="3"></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary">Save</button>
+		  </form>
+		  <div class="gratitude-entries">
+			<h3>Previous Entries:</h3>
+			<ul id="gratitude-list">
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+  
+  
+  
+
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script href="index.js"></script>
+</body>
+</html>

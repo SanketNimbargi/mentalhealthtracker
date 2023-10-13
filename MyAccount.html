@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account section</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">My Account</h5>
+                <form>
+                  <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirm-password" placeholder="Confirm Password">
+                  </div>
+                  <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" class="form-control" id="first-name" placeholder="First Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" class="form-control" id="last-name" placeholder="Last Name">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Save Changes</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        
+        $(document).ready(function() {
+  
+  $('#account-form').submit(function(event) {
+    event.preventDefault();
+
+    var email = $('#email').val().trim();
+    var password = $('#password').val().trim();
+    var confirmPassword = $('#confirm-password').val().trim();
+
+    if (email === '') {
+      $('#email-error').text('Please enter your email address.');
+      return;
+    } else {
+      $('#email-error').text('');
+    }
+
+    if (password === '') {
+      $('#password-error').text('Please enter your password.');
+      return;
+    } else {
+      $('#password-error').text('');
+    }
+
+    if (confirmPassword === '') {
+      $('#confirm-password-error').text('Please confirm your password.');
+      return;
+    } else if (password !== confirmPassword) {
+      $('#confirm-password-error').text('Passwords do not match.');
+      return;
+    } else {
+      $('#confirm-password-error').text('');
+    }
+
+   
+  });
+});
+      </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

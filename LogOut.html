@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Log Out - Memories-Sharing</title>
+  </head>
+  <body>
+    <h1>You have been logged out.</h1>
+    <p>Thank you for using Mental Health Tracker.</p>
+    <a href="login.html">Log in again</a>
+  </body>
+
+  <script>
+    document.getElementById("logoutBtn").addEventListener("click", logout);
+
+function logout() {
+  // Clear any session data or tokens
+  // Redirect to the login page
+  window.location.href = "login.html";
+}
+
+  </script>
+</html>
